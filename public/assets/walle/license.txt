@@ -1,0 +1,8 @@
+Model Information:
+* title:	Wall-E(Animated)
+* source:	https://sketchfab.com/3d-models/wall-eanimated-a6758de2e5a04f9e821596592ef4279c
+* author:	Janis Zeps (https://sketchfab.com/zeps9001)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
