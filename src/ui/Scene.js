@@ -6,7 +6,7 @@ source: https://sketchfab.com/3d-models/wall-eanimated-a6758de2e5a04f9e821596592
 title: Wall-E(Animated)
 */
 
-import {  useEffect} from 'react'
+import { useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
 
