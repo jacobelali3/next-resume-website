@@ -1,7 +1,3 @@
-export default function ProjectsLayout({
-    children,
-  }) {
-    return <div className="">
-      {children}
-      </div>;
-  }
+export default function ProjectsLayout({ children }) {
+  return <div className="flex my-16">{children}</div>;
+}

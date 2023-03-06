@@ -11,13 +11,7 @@ function AboutMe() {
       I am a software engineer based in Sydney, Australia. My passion
       lies within web development and I love to explore the latest cutting
       edge technology! <br></br>
-      <br></br>I currently work as a Backend Engineer at Macquarie Group.{" "}
-      <Image  className="mt-4 h-8 inline dark:bg-opacity-80 dark:bg-white rounded"
-        src={'/assets/macquarie-bank-logo.png'}
-        alt="macquarie-bank-logo"
-        rel="noreferrer"
-        width={200}
-        height={200}></Image>
+      <br></br>I currently work as a Backend Engineer at Macquarie Group.
       <br></br>
       <br></br>I&apos;m learning both frontend and backend in hopes
       of becoming a full stack. I seek opportunities where I can learn, grow

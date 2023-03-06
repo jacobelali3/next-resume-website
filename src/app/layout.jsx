@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
           <div className="mt-6 py-2 ">
             <a
-              href="/assets/resume.pdf"
+              href="https://d1jt5eir8qi0yi.cloudfront.net/resume_website/resume.pdf"
               className="lg:inline-block lg:text-lg md:text-base lg:ml-64 sm:ml-0 md:ml-6 px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white "
               target="_blank"
             >
@@ -41,10 +41,11 @@ export default function RootLayout({ children }) {
           <div className="blur opacity-50 dark:opacity-80 absolute -inset-0 bg-blue-200 dark:bg-blue-200 rounded-full"></div>
           <Image
             alt="jacobElali"
-            className=" border-transparent hover:border-2 rounded-full relative lg:w-60 md:w-40 sm:w-40 w-40"
+            className=" border-transparent hover:border-2 rounded-full relative lg:w-60 w-40"
             src={"/assets/myprofilepic.jpg"}
             width={200}
             height={200}
+            priority
           />
         </div>
       </div>
