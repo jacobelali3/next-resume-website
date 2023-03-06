@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
           <div className="mt-6 py-2 ">
             <a
-              href="https://d1jt5eir8qi0yi.cloudfront.net/resume_website/resume.pdf"
+              href={process.env.RESUME}
               className="lg:inline-block lg:text-lg md:text-base lg:ml-64 sm:ml-0 md:ml-6 px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white "
               target="_blank"
             >
