@@ -32,11 +32,9 @@ function AboutMe() {
       </a>
       , which greatly inspired my love for technology. The idea of an emotional resonance from sentient machine facinated me.
       <br></br>
-      <Image className="w-full lg:w-6/12 md:5/12 h-32 mt-8"
-      src={'/assets/iron-giant.gif'}
-      alt="Iron giant emotional outburst after kid almost dies"
-      width={200}
-      height={200}/>
+      <video playsInline autoPlay loop muted className="w-full lg:w-80 md:5/12 h-auto mt-8">
+          <source src={'/assets/iron-giant.mp4'} type="video/mp4"></source>
+        </video>
       <br></br>
       The use of programs and computer science to advance humanity gave me hope for a future with
       countless possibilites. Naturally, my specialisation into software
