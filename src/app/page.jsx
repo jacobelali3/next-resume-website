@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Video from '../ui/codevideo.jsx'
-
+//import { lazy } from 'react';
+//const AvatarComponent = lazy(() => import('./AvatarComponent'));
 export default function Home() {
   return (
     <div className='overflow-hidden'>
