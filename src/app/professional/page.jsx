@@ -26,7 +26,7 @@ function Professional() {
             <br></br>&#8226; Developed and tested Spring API within a microservice architecture.
             <br></br>&#8226; Actioned various tasks within Solaris UNIX environments
             <br></br>&#8226; Write and improve shell/kornshell scripts within batch process.
-            <br></br>&#8226; Maintain & deploy AWS EC2 instances and S3 buckets using Arturo.
+            <br></br>&#8226; Maintain & deploy AWS EC2 instances and S3 buckets.
             <br></br>&#8226; Executed queries and data changes using Sybase & Presto SQL databases.
             <br></br>&#8226; Communicated with business people, engineers and product to achieve common goals.
           </p>
@@ -46,7 +46,7 @@ function Professional() {
             <br></br>March 2022 - June 2022
             <br></br>
             <br></br> Prospecta software specialises in master data governance. When I was working there, they were in the process of revamping their software architecture and product vision.
-            They were in the process of moving from a monolithic to microservice based architecture and developing a new white label product &apos;MDO FUSE&apos;. I had regular talks with other engineers, architect, product owners and analysts throughout the SDLC.
+            They were in the process of moving from a monolithic to microservice based architecture and developing a new white label product &apos;MDO FUSE&apos;. I had regular discussion with other engineers, architect, product owners and analysts throughout the SDLC.
             <br></br>
             <br></br>&#8226; Developed and optimised multiple API&apos;s within tight deadlines using Spring boot and Java 11.
             <br></br>&#8226; Merged, pulled and resolved branches using git, bitbucket and builds using Jenkins.
@@ -106,10 +106,12 @@ function Professional() {
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <p className=" font-sans font-bold text-2xl mt-10  ">Technical</p>
           <p className=" font-sans mt-4  ">
-            Programming &#10137; Javascript, Typescript, Java, Swift, Python, C, HTML, CSS,
-            MySQL & NoSQL.
+            Programming &#10137; Javascript, Typescript, Java, Swift, Python, C, HTML, Tailwind,
+            SQL & NoSQL.
             <br></br>
             Technologies &#10137; Spring, React, Next, Django & Flask.
+            <br></br>
+            Other tech &#10137; AWS S3, Cloudfront, EC2. Unix, Shell scripting, Control-M, Bitbucket.
           </p>
           <p className=" font-sans font-bold text-2xl mt-6  ">Transferable</p>
           <p className=" font-sans mt-4  ">

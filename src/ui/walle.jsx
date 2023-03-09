@@ -3,6 +3,7 @@ import Scene from './Scene.jsx'
 import { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
+import Error from '@/app/error.jsx';
 
 
 function WallE() {
@@ -19,7 +20,7 @@ function WallE() {
     <p className="text-md text-center italic animate-pulse">Click me!</p>
     <Canvas camera={{pov: 100, position: [3, 3, 6.5] }}
     onClick={() => WallEAudioList[Math.floor(Math.random() * WallEAudioList.length)].play()}>
-      <Suspense fallback={null}>
+      <Suspense fallback={<Error/>}>
 
         <OrbitControls
           enablePan={true}
