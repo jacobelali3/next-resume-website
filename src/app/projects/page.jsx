@@ -98,7 +98,7 @@ function Projects() {
               {" "}
               React only
             </a>
-            , because it was the distinguishment between SSR and client was odd. Recently I migrated it to Next in an effort to learn the framework. I also moved the heavy client loaded content to AWS CloudFront & S3 bucket.
+            , because I found the distinguishment between SSR and client odd. Recently, I migrated it to Next in an effort to learn the framework. I also moved the heavy client loaded content to AWS CloudFront & S3 bucket.
           </p>
         </div>
 
