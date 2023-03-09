@@ -3,7 +3,6 @@ import Scene from './Scene.jsx'
 import { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-import Error from '@/app/error.jsx';
 
 
 function WallE() {
