@@ -1,3 +1,3 @@
-Honestly I felt guilty for making the client load the 'code mp4' video on homepage. Create-react-app is also pretty yucky. Therefore I decided to migrate to Next so i can load certain things on the server. This will also serve as a way to introduce myself to Next.js.
+This website was initially made with create-react-app which can be found [here](https://github.com/jacobelali3/react-resume-website). The homepage that loads a background video would experience a delay and the entire single page app was client loaded. I wanted the performance and potential of my website to grow. Therefore I decided to migrate to Next so i can load certain things on the server and focus abit more on page performance. This also served as a way to introduce myself to Next.js (13).
 
-This repo will serve as the new basis for my Portfolio / Resume website.
+This repo now serve as the new basis for my Portfolio / Resume website.
