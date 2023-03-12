@@ -60,7 +60,7 @@ function Academia() {
 
 
           <a
-              href={'https://d1jt5eir8qi0yi.cloudfront.net/Research_Proposal_Jacob_Elali.pdf.gz'}
+              href={process.env.RESEARCH}
               className="mt-4  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
               target="_blank"
               rel="noreferrer"
