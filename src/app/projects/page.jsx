@@ -91,7 +91,7 @@ function Projects() {
             <br></br>Then I decided to build it with
             <a
               className="text-bold text-blue-500"
-              href="https://github.com/jacobelali3/react-resume-website"
+              href="https://github.com/jacobelali3/next-resume-website"
               rel="noreferrer"
               target="_blank"
             >
