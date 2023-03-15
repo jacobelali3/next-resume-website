@@ -9,7 +9,8 @@ export default function Home() {
 
     <div  className=" h-22 mt-48 flex justify-center mx-12">
     <Link href="/about">
-      <button className="px-6 py-4 relative bg-slate-800 rounded-lg animate-beat ">
+      <button aria-label = "welcome button"
+      className="px-6 py-4 relative bg-slate-800 rounded-lg animate-beat ">
         <h1 className="mb-4 text-2xl text-white text-center">Welcome,<br></br>I&apos;m a software engineer with a passion for technology!</h1>
         <p className='text-white text-center no-underline hover:underline decoration-blue-400'>Check me out!</p>
         </button>

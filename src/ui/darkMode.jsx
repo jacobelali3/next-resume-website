@@ -5,7 +5,8 @@ function DarkMode() {
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <div className="lg:relative fixed mt-2 ml-2 lg:mt-0 lg:ml-32  rounded-full pt-1 px-2 lg:px-0 lg:py-0">
-      <button onClick = {()=>setTheme(colorTheme)} className="">
+      <button aria-label = "welcome button"
+      onClick = {()=>setTheme(colorTheme)} className="">
         {colorTheme === "light" ? (
           <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -8,7 +8,7 @@ function BurgerMenu() {
 
   return (
     <div className="flex  lg:hidden ">
-      <button
+      <button aria-label = "burger button"
         onClick={() => setOpen(!open)}
         className=" items-center px-3 py-2 border rounded text-white border-white hover:text-blue-300 hover:border-blue-300 hover:bg-white"
       >
