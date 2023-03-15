@@ -7644,13 +7644,13 @@
   ],
   "images": [
     {
-      "uri": "textures/wall_e_baseColor.png"
+      "uri": "textures/wall_e_baseColor.webp"
     },
     {
-      "uri": "textures/wall_e_metallicRoughness.png"
+      "uri": "textures/wall_e_metallicRoughness.webp"
     },
     {
-      "uri": "textures/wall_e_normal.png"
+      "uri": "textures/wall_e_normal.webp"
     }
   ],
   "materials": [
