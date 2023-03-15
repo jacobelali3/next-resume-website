@@ -4,11 +4,11 @@ This repo now serve as the new basis for my Portfolio / Resume website.
 
 <img src="https://i.imgur.com/WIlZtI7.png"
      alt="Mobile performance"
-     width=400
+     width=450
      height=250
      style="float: left; margin-right: 10px;" />
      <img src="https://i.imgur.com/812LNxm.png"
      alt="Desktop performance"
-     width=400
+     width=450
      height=250
      style="float: right; margin-right: 10px;" />
