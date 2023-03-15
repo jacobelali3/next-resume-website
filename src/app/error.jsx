@@ -10,7 +10,7 @@ export default function Error({ error, reset }) {
 
   return (
     <html className="h-full">
-    <main className="relative isolate min-h-full h-full">
+    <main className="fixed top-0 left-0 w-screen h-screen bg-white z-50">
     <Image
       src={"/assets/error-background.jpg"}
       alt=""

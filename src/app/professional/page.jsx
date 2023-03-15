@@ -11,7 +11,7 @@ function Professional() {
           <Image
             className="  lg:ml-2 lg:mr-6 rounded-lg w-18 h-8 lg:float-right dark:bg-white "
             src={"/assets/macquarie-bank-logo.png"}
-            alt="Income Energy Logo"
+            alt="Macquarie Group Logo"
             width={200}
             height={200}
 
@@ -36,7 +36,7 @@ function Professional() {
           <Image
             className=" mt-10 ml-2 lg:mr-6 rounded-lg w-20 float-right "
             src={"/assets/prospecta-logo.png"}
-            alt="Income Energy Logo"
+            alt="Prospecta Software Logo"
             width={200}
             height={200}
           />

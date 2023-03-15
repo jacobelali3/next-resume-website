@@ -11,7 +11,7 @@ function Academia() {
           <Image
             className="w-22 h-14 float-right relative mb-12 rounded-lg bg-gray-800 px-2 py-2 "
             src={'/assets/utslogo.png'}
-            alt="utslogo"
+            alt="uts logo"
             rel="noreferrer"
             width={100}
             height={50}

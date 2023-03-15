@@ -13,7 +13,7 @@ function Projects() {
             target="_blank"
           >
             <Image
-              className="place-items-center mt-4  animate-bounce w-20 float-right dark:bg-white dark:rounded-full"
+              className="place-items-center mt-4  animate-bounce w-12 float-right dark:bg-white dark:rounded-full"
               src={"/assets/githubLogo.png"}
               alt="Git Hub Logo"
               width={200}
@@ -38,7 +38,7 @@ function Projects() {
             target="_blank"
           >
             <Image
-              className="place-items-center mt-10 animate-bounce w-20 float-right dark:bg-white dark:rounded-full"
+              className="place-items-center mt-10 animate-bounce w-12 float-right dark:bg-white dark:rounded-full"
               src={"/assets/githubLogo.png"}
               alt="Git Hub Logo"
               width={200}
@@ -65,7 +65,7 @@ function Projects() {
             rel="noreferrer"
           >
             <Image
-              className="place-items-center mt-10 w-20 animate-bounce float-right dark:bg-white dark:rounded-full"
+              className="place-items-center mt-10 w-12 animate-bounce float-right dark:bg-white dark:rounded-full"
               src={"/assets/githubLogo.png"}
               alt="Git Hub Logo"
               width={200}
