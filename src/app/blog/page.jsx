@@ -1,5 +1,6 @@
 import PocketBase from "pocketbase";
 import Link from "next/link";
+import Image from "next/image";
 
 async function getBlogs() {
   const pb = new PocketBase(process.env.BACKEND);
@@ -31,7 +32,7 @@ export default async function Blog() {
             Care to read?
           </h2>
           <p className="mt-2 text-lg leading-8 ">
-            Here's some of my thoughts on various topics.
+            Here&apos;s some of my thoughts on various topics.
           </p>
         </div>
         <div className="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -40,10 +41,12 @@ export default async function Blog() {
                 key={post.id}
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
               >
-                <img
+                <Image
                   src={post.imageUrl}
-                  alt=""
+                  alt="Blog intro image"
                   className="absolute inset-0 -z-10 h-full w-full object-cover"
+                  width={200}
+                  height={200}
                 />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                 <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
