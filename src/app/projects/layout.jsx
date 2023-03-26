@@ -1,7 +1,7 @@
 
 export const metadata = {
   title: 'Projects',
-  aboutMe: 'Jacob Elali portfolio software engineer about me',
+  projects: 'Jacob Elali portfolio software engineer projects hobby engineering',
   content:"Jacob Elali portfolio software engineer projects hobby programming sydney australia",
   viewport: 'width=device-width, initial-scale=1'
 }

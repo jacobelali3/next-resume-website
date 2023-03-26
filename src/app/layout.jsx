@@ -75,6 +75,9 @@ export default function RootLayout({ children }) {
             <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
             <Link href="/projects">Projects</Link>
             </p>
+            <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
+            <Link href="/blog">Blog</Link>
+            </p>
             <DarkMode />
           </div>
 

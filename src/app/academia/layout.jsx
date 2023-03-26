@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Academia',
-  aboutMe: 'Jacob Elali portfolio software engineer about me',
+  academia: 'Jacob Elali portfolio software engineer academia degree uts machine learning',
   content:"Jacob Elali portfolio software engineer academic academia university uts sydney australia",
   viewport: 'width=device-width, initial-scale=1'
 }
