@@ -2,6 +2,10 @@ import PocketBase from "pocketbase";
 import Link from "next/link";
 import Image from "next/image";
 
+export default function myLoader({ src }) {
+  return `${src}`
+}
+
 async function getBlogs() {
   const pb = new PocketBase(process.env.BACKEND);
   const authData = await pb.admins.authWithPassword(
@@ -42,6 +46,7 @@ export default async function Blog() {
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
               >
                 <Image
+                  loader={myLoader}
                   src={post.imageUrl}
                   alt="Blog intro image"
                   className="absolute inset-0 -z-10 h-full w-full object-cover"
