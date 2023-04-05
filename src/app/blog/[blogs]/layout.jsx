@@ -1,7 +1,7 @@
 
 export const metadata = {
     title: 'Blog',
-    projects: 'Jacob Elali portfolio software engineer blog page',
+    blogs: 'Jacob Elali portfolio software engineer blog page',
     content:"Jacob Elali portfolio software engineer blog page sydney australia",
     viewport: 'width=device-width, initial-scale=1'
   }
