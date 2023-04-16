@@ -9,7 +9,7 @@ function Academia() {
 
       <div className="mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <Image
-          className="w-22 h-14 float-right relative mb-12 rounded-lg bg-gray-800 px-2 py-2 "
+          className="ml-10 lg:w-22 h-14 float-right relative mb-12 rounded-lg bg-gray-800 px-2 py-2 "
           src={"/assets/utslogo.png"}
           alt="uts logo"
           rel="noreferrer"
@@ -43,7 +43,7 @@ function Academia() {
       </div>
 
       <div className="mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <p className="text-2xl mt-12 mb-4 ">
+        <p className="text-2xl  mb-4 ">
           <b>Research Topic:</b> Assisted Posting for Small Business Owners on
           Instagram<br></br>
           <b>Supervisor: </b>Prof. Alan Parr<br></br>

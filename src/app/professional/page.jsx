@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 function Professional() {
-    return (<div className="lg:flex-row flex flex-col">
+    return (
+    <div className="lg:flex-row flex flex-col">
         <div className="lg:ml-16  px-4  text-2xl ">
           <h2 className="text-4xl text-left font-bold">
             Professional Experience

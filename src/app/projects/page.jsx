@@ -3,7 +3,7 @@ import Image from "next/image";
 function Projects() {
   return (
     <div>
-      <div className="lg:ml-20    px-4  text-2xl lg:w-1/2 w-auto ">
+      <div className="lg:ml-20 px-4 text-2xl lg:w-3/4 w-full font-sans">
         <h2 className="text-4xl text-left font-bold">Projects</h2>
 
         <div className="mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -13,14 +13,14 @@ function Projects() {
             target="_blank"
           >
             <Image
-              className="place-items-center mt-4  animate-bounce w-12 float-right dark:bg-white dark:rounded-full"
+              className="place-items-center mt-4 animate-bounce w-12 float-right dark:bg-white dark:rounded-full"
               src={"/assets/githubLogo.png"}
               alt="Git Hub Logo"
               width={200}
               height={200}
             />
           </a>
-          <p className="  font-sans  mt-10 ">
+          <p className="">
             <b>UTS HELPS Prototype</b>
             <br></br>
             <br></br> Collaborated on a prototype for the outdated UTS HELPS
@@ -46,7 +46,7 @@ function Projects() {
             />
           </a>
 
-          <p className=" font-sans mt-10 ">
+          <p className="font-sans ">
             <b>COVID-19 App</b>
             <br></br>
             <br></br> Collaborated on an application that was developed in
@@ -72,7 +72,7 @@ function Projects() {
               height={200}
             />
           </a>
-          <p className="  font-sans mt-10 ">
+          <p className="">
             <b>This Website</b>
             <br></br>
             <br></br> This website is made using Next and Tailwind. I&apos;ve used tailwind to style and make the site
@@ -103,8 +103,8 @@ function Projects() {
         </div>
 
         <div className="mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <p className="font-semibold mt-10 ">Other Projects</p>
-          <ul className=" pl-6 font-sans mt-6 list-disc">
+          <p className="font-semibold ">Other Projects</p>
+          <ul className=" pl-6 mt-6 list-disc">
             <li className="underline decoration-blue-400 hover:text-blue-500">
               <a
                 rel="noreferrer"
