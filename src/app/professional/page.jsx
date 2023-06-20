@@ -20,15 +20,16 @@ function Professional() {
           <p className=" font-sans mt-2  ">
             <b>Macquarie Group</b>
             <br></br>Software Engineer
-            <br></br>July 2022 - Present
+            <br></br> July 2022 - Present
             <br></br>
             <br></br> Macquarie Group is a large multinational financial service business. They have afew branches but I work at Banking & Financial Services (BFS) division, within the core banking team. We handle the core functionality and maintenance of business banking. I&apos;ve learnt to be a very flexible engineer here - UNIX, SQL, Cloud, Shell scripting & Programming are all apart of the job.
             <br></br>
             <br></br>&#8226; Developed and tested Spring API within a microservice architecture.
-            <br></br>&#8226; Actioned various tasks within Solaris UNIX environments
-            <br></br>&#8226; Write and improve shell/kornshell scripts within batch process.
-            <br></br>&#8226; Maintain & deploy AWS EC2 instances and S3 buckets.
-            <br></br>&#8226; Executed queries and data changes using Sybase & Presto SQL databases.
+            <br></br>&#8226; Actioned various tasks within Solaris UNIX, Redhat Linux environments.
+            <br></br>&#8226; Develop and improve shell/kornshell scripts within batch process.
+            <br></br>&#8226; Assist migrate Macquaries on-prem infrastructure to the cloud.
+            <br></br>&#8226; On call prod maintenance & resolution using SumoLogic, Appdynamics.
+            <br></br>&#8226; Executed queries and data changes using Sybase, Presto & RDS SQL databases.
             <br></br>&#8226; Communicated with business people, engineers and product to achieve common goals.
           </p>
           </div>
@@ -44,7 +45,7 @@ function Professional() {
           <p className=" font-sans mt-10  ">
             <b>Prospecta Software</b>
             <br></br>Graduate Software Engineer
-            <br></br>March 2022 - June 2022
+            <br></br> March 2022 - July 2022
             <br></br>
             <br></br> Prospecta software specialises in master data governance. When I was working there, they were in the process of revamping their software architecture and product vision.
             They were in the process of moving from a monolithic to microservice based architecture and developing a new white label product &apos;MDO FUSE&apos;. I had regular discussion with other engineers, architect, product owners and analysts throughout the SDLC.
@@ -69,7 +70,7 @@ function Professional() {
           <p className=" font-sans mt-10 ">
             <b>Astronaut Technologies</b>
             <br></br>Software Engineer Intern
-            <br></br> November 2021 - Present
+            <br></br> November 2021 - February 2022
             <br></br>
             <br></br> Astronaut is an asynchronous video interviewing company
             offering SAP and SAS services.
@@ -90,7 +91,7 @@ function Professional() {
           <p className=" font-sans mt-10  ">
             <b>Income Energy</b>
             <br></br>Software Engineer Intern
-            <br></br>February 2021 - April 2021
+            <br></br> February 2021 - April 2021
             <br></br>
             <br></br> Income Energy was a solar startup hosted by Energy Lab, a
             UTS partner.
@@ -107,12 +108,12 @@ function Professional() {
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <p className=" font-sans font-bold text-2xl mt-10  ">Technical</p>
           <p className=" font-sans mt-4  ">
-            Programming &#10137; Javascript, Typescript, Java, Swift, Python, C, HTML, Tailwind,
+            Programming &#10137; Javascript, Typescript, Java, Swift, Python, C, Bash, Kornshell, HTML, Tailwind,
             SQL & NoSQL.
             <br></br>
             Technologies &#10137; Spring, React, Next, Django & Flask.
             <br></br>
-            Other tech &#10137; AWS S3, Cloudfront, EC2. Unix, Shell scripting, Control-M, Bitbucket.
+            Other tech &#10137; AWS S3, Cloudfront, EC2. Bash, KSH scripting, Control-M, Bitbucket, Jira, SumoLogic, Appdynamics.
           </p>
           <p className=" font-sans font-bold text-2xl mt-6  ">Transferable</p>
           <p className=" font-sans mt-4  ">

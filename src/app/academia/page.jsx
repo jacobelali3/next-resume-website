@@ -16,7 +16,7 @@ function Academia() {
           width={100}
           height={50}
         />
-        <p className="text-2xl ">
+        <p className="text-2xl mb-8">
           <b>Course: </b>Bachelor of Engineering (Honours) <br></br>{" "}
           <b>Major: </b>Software Engineering
           <br></br>
@@ -26,8 +26,9 @@ function Academia() {
           <b> University: </b>University of Technology Sydney <br></br>{" "}
           <b>WAM:</b> 77
           <br></br>
-          <br></br>
-          <a
+        </p>
+
+        <a
             href={process.env.DEGREE}
             className="mt-4  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
             target="_blank"
@@ -35,7 +36,6 @@ function Academia() {
           >
             View Degree
           </a>
-        </p>
       </div>
 
       <div>
@@ -43,7 +43,7 @@ function Academia() {
       </div>
 
       <div className="mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <p className="text-2xl  mb-4 ">
+        <p className="text-2xl  mb-8 ">
           <b>Research Topic:</b> Assisted Posting for Small Business Owners on
           Instagram<br></br>
           <b>Supervisor: </b>Prof. Alan Parr<br></br>
@@ -52,11 +52,13 @@ function Academia() {
           attempts to create a program that provides data analyics and
           predictive suggestions for small business owners on Instragram using
           machine learning.{" "}
+          <br></br>
+
         </p>
 
         <a
           href={process.env.RESEARCH}
-          className="mt-4  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
+          className="mt-8  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
           target="_blank"
           rel="noreferrer"
         >
