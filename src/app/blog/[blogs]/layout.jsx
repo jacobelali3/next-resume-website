@@ -6,6 +6,6 @@ export const metadata = {
     viewport: 'width=device-width, initial-scale=1'
   }
 
-  export default function ProjectsLayout({ children }) {
+  export default function BlogsLayout({ children }) {
     return <div className="flex my-16">{children}</div>;
   }
