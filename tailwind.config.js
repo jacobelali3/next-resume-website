@@ -22,6 +22,7 @@ module.exports = {
       },
       animation: {
           'beat': 'fade-in-down 2s ease-out'
+
       }
   },
   },
