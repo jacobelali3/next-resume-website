@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-three/drei": "^9.56.27",
+    "@vercel/analytics": "^1.0.1",
     "eslint": "^8.34.0",
     "eslint-config-next": "^13.2.1",
     "html-react-parser": "^3.0.15",
