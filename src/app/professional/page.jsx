@@ -19,7 +19,7 @@ function Professional() {
           <p className=" font-sans mt-2  ">
             <b>Westpac Banking Corporation</b>
             <br></br>Software Engineer
-            <br></br> November 2024 - Present
+            <br></br> November 2024 -  Present
             <br></br>
             <br></br> Westpac is Australia's 2nd largest bank. I'm working on their payments tech.
             <br></br>
