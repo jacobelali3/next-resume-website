@@ -7,7 +7,26 @@ function Professional() {
           <h2 className="text-4xl text-left font-bold">
             Professional Experience
           </h2>
+           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
+          <Image
+            className="  lg:ml-2 lg:mr-6 rounded-lg w-12 h-8 lg:float-right dark:bg-white "
+            src={"/assets/westpac-logo.png"}
+            alt="Westpac Logo"
+            width={200}
+            height={200}
 
+          />
+          <p className=" font-sans mt-2  ">
+            <b>Westpac Banking Corporation</b>
+            <br></br>Software Engineer
+            <br></br> November 2024 - Present
+            <br></br>
+            <br></br> Westpac is Australia's 2nd largest bank. I'm working on their payments tech.
+            <br></br>
+            <br></br>I do really fun payments tech stuff here. Improving the way westpac does their payments and contributing to a innovative, can do mind set at the company.
+            <br></br>Currently i'm simplifying the way they do payments as part of westpacs UNITE program.
+          </p>
+          </div>
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <Image
             className="  lg:ml-2 lg:mr-6 rounded-lg w-18 h-8 lg:float-right dark:bg-white "
@@ -20,9 +39,9 @@ function Professional() {
           <p className=" font-sans mt-2  ">
             <b>Macquarie Group</b>
             <br></br>Software Engineer
-            <br></br> July 2022 - Present
+            <br></br> July 2022 - November 2024
             <br></br>
-            <br></br> Macquarie Group is a large multinational financial service business. They have afew branches but I work at Banking & Financial Services (BFS) division, within the core banking team. We handle the core functionality and maintenance of business banking. I&apos;ve learnt to be a very flexible engineer here - UNIX, SQL, Cloud, Shell scripting & Programming are all apart of the job.
+            <br></br> Macquarie Group is a large multinational financial service business. I worked at Banking & Financial Services (BFS) division, within the core banking team. We handled the core functionality and maintenance of business banking. I&apos;ve learnt to be a very flexible engineer here - UNIX, SQL, Cloud, Shell scripting & Programming were all apart of the job.
             <br></br>
             <br></br>&#8226; Developed and tested Spring API within a microservice architecture.
             <br></br>&#8226; Actioned various tasks within Solaris UNIX, Redhat Linux environments.
