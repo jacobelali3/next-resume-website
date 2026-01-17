@@ -1,28 +1,8 @@
-import PocketBase from "pocketbase";
 import Link from "next/link";
-
-async function getBlogs() {
-  const pb = new PocketBase(process.env.BACKEND);
-  const authData = await pb.admins.authWithPassword(
-    process.env.USER,
-    process.env.PASS
-  );
-
-  const res = await fetch(
-    `${process.env.BACKEND}/api/collections/post_metadata/records`,
-    {
-      headers: { Authorization: authData.token },
-    }
-  );
-  if (!res.ok) {
-    throw new Error("Error fetching posts from Pocketbase API");
-  }
-
-  return res.json();
-}
+import { getAllPosts } from "../../lib/posts.js";
 
 export default async function Blog() {
-  const posts = await getBlogs();
+  const posts = getAllPosts();
   return (
     <div className=" pb-24 pt-6 sm:pb-32 sm:pt-6 ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -35,13 +15,13 @@ export default async function Blog() {
           </p>
         </div>
         <div className="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.items.map((post) => (
+          {posts.map((post) => (
               <article
                 key={post.id}
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
               >
                 <img
-                  src={post.imageUrl}
+                  src={post.imageUrl || "/assets/default-blog.jpg"}
                   alt="Blog intro image"
                   className="absolute inset-0 -z-10 h-full w-full object-cover"
                 />
@@ -49,8 +29,8 @@ export default async function Blog() {
                 <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
                 <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                  <time dateTime={post.created} className="mr-8">
-                    {post.created}
+                  <time dateTime={post.date} className="mr-8">
+                    {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>
                   <div className="-ml-4 flex items-center gap-x-4">
                     <svg
@@ -62,7 +42,7 @@ export default async function Blog() {
                     <div className="flex gap-x-2.5">{post.author}</div>
                   </div>
                 </div>
-                <Link href={`/blog/${post.post_id}`}>
+                <Link href={`/blog/${post.id}`}>
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
                   <span className="absolute inset-0" />
                     {post.title}

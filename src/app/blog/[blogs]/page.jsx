@@ -1,39 +1,36 @@
-import PocketBase from "pocketbase";
-import parse from "html-react-parser";
+import { getPostById, getAllPostIds } from "../../../lib/posts.js";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
+export async function generateStaticParams() {
+  const posts = getAllPostIds();
+  return posts.map((post) => ({
+    blogs: post.params.blogs,
+  }));
+}
 
 export async function generateMetadata({ params }) {
-  const post = await getBlog(params.blogs);
-  console.log(post.items[0].title);
+  const post = getPostById(params.blogs);
   return {
-    title: post.items[0].title,
+    title: post.title,
+    description: post.excerpt || post.title,
   };
 }
 
-
-async function getBlog(id) {
-  const pb = new PocketBase(process.env.BACKEND);
-  const authData = await pb.admins.authWithPassword(
-    process.env.USER,
-    process.env.PASS
-  );
-  const res = await fetch(
-    `${process.env.BACKEND}/api/collections/posts/records?filter=(id='${id}')`,
-    {
-      headers: { Authorization: authData.token },
-    }
-  );
-  if (!res.ok) {
-    console.log(res.Error);
-    throw new Error("Error fetching post" + { id } + "from Pocketbase API");
-  }
-  return res.json();
-}
-
 export default async function BlogPage({ params }) {
-  const post = await getBlog(params.blogs);
+  const post = getPostById(params.blogs);
+
   return (
-    <div className="lg:ml-20 px-4 text-2xl md:w-3/4 lg:w-3/4 mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      {parse(post.items[0].content)}
+    <div className="lg:ml-20 px-4 md:w-3/4 lg:w-3/4 mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <article className="prose prose-lg dark:prose-invert max-w-none">
+        <h1>{post.title}</h1>
+        <div className="text-sm text-gray-600 dark:text-gray-400 mb-8">
+          <time dateTime={post.date}>
+            {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+          {post.author && <span> • {post.author}</span>}
+        </div>
+        <MDXRemote source={post.content} />
+      </article>
     </div>
   );
 }

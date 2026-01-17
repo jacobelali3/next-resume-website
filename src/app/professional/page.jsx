@@ -23,8 +23,7 @@ function Professional() {
             <br></br>
             <br></br> Westpac is Australia's 2nd largest bank. I'm working on their payments tech.
             <br></br>
-            <br></br>I do really fun payments tech stuff here. Improving the way westpac does their payments and contributing to a innovative, can do mind set at the company.
-            <br></br>Currently i'm simplifying the way they do payments as part of westpacs UNITE program.
+            <br></br>Currently i'm simplifying the way they do payments as part of westpacs UNITE program. Building and improving the way westpac does their payments and contributing to a innovative, can do mind set at the company.
           </p>
           </div>
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
