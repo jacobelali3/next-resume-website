@@ -9,7 +9,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const post = getPostById(params.blogs);
+  const resolvedParams = await params;
+  const post = getPostById(resolvedParams.blogs);
   return {
     title: post.title,
     description: post.excerpt || post.title,
@@ -17,7 +18,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPage({ params }) {
-  const post = getPostById(params.blogs);
+  const resolvedParams = await params;
+  const post = getPostById(resolvedParams.blogs);
 
   return (
     <div className="lg:ml-20 px-4 md:w-3/4 lg:w-3/4 mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
