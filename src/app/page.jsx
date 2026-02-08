@@ -7,7 +7,7 @@ export default function Home() {
 
     <Video></Video>
 
-    <div  className=" h-22 mt-48 flex justify-center mx-12">
+    <div  className="h-auto mt-48 flex justify-center mx-12">
     <Link href="/about">
       <button aria-label = "welcome button"
       className="px-6 py-4 relative bg-slate-800 rounded-lg animate-beat ">
