@@ -4,6 +4,7 @@ import Link from 'next/link'
 import DarkMode from '../ui/darkMode.jsx'
 import Image from 'next/image.js'
 import { Analytics } from '@vercel/analytics/react';
+import QuantumGateway from '../ui/shootingStar.jsx';
 
 export const metadata = {
   title: 'Jacob Elali',
@@ -98,6 +99,7 @@ export default function RootLayout({ children }) {
 
 
         {children}
+        <QuantumGateway />
         <Analytics />
       </body>
 
