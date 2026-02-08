@@ -5,6 +5,10 @@ import matter from 'gray-matter';
 const postsDirectory = path.join(process.cwd(), 'content', 'blogs');
 
 export function getAllPosts() {
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+
   const fileNames = fs.readdirSync(postsDirectory);
 
   const allPostsData = fileNames
@@ -52,6 +56,10 @@ export function getPostById(id) {
 }
 
 export function getAllPostIds() {
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+
   const fileNames = fs.readdirSync(postsDirectory);
 
   return fileNames
