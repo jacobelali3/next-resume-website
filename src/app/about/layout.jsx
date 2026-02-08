@@ -9,7 +9,7 @@ export const metadata = {
 export default function AboutMeLayout({
     children,
   }) {
-    return <div className="pb-4 lg:flex justify-center block md:block ">
+    return <div className="pb-4 lg:w-3/4 lg:ml-20 px-4 block md:block mt-14">
       {children}
       </div>;
   }

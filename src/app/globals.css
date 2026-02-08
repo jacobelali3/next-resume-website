@@ -2,6 +2,10 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+html {
+  overflow-y: scroll;
+}
+
 @theme {
   --animate-beat: fade-in-down 2s ease-out;
 }

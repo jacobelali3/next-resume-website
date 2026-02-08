@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function AboutMe() {
   return (
-    <div className="pb-4 lg:flex justify-center block md:block mt-14">
-      <div className=" lg:w-1/2 sm:w-screen mt-2 px-4">
+    <div className="lg:flex">
+      <div className="lg:w-2/3 sm:w-screen mt-2">
         <h1 className=" text-4xl font-bold">About Me</h1>
 
         <p className="px-2 text-2xl font-sans mt-6 ">
