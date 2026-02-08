@@ -2,7 +2,16 @@
 import useDarkMode from "../hooks/useDarkMode.jsx";
 
 function DarkMode() {
-  const [colorTheme, setTheme] = useDarkMode();
+  const [colorTheme, setTheme, mounted] = useDarkMode();
+
+  if (!mounted) {
+    return (
+      <div className="lg:relative fixed mt-2 ml-2 lg:mt-0 lg:ml-32  rounded-full pt-1 px-2 lg:px-0 lg:py-0">
+        <div className="h-8 w-8" />
+      </div>
+    );
+  }
+
   return (
     <div className="lg:relative fixed mt-2 ml-2 lg:mt-0 lg:ml-32  rounded-full pt-1 px-2 lg:px-0 lg:py-0">
       <button aria-label = "welcome button"
