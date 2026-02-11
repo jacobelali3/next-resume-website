@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 
 const COMMANDS = {
   help: {
@@ -22,6 +23,7 @@ const COMMANDS = {
   },
   whoami: {
     description: 'About Jacob Elali',
+    link: { href: '/about', label: 'Read more → About Me' },
     run: () => [
       '  ╭──────────────────────────────────────────────╮',
       '  │             Jacob Elali                       │',
@@ -40,6 +42,7 @@ const COMMANDS = {
   },
   skills: {
     description: 'Technical skills & languages',
+    link: { href: '/about', label: 'Read more → About Me' },
     run: () => [
       '  ┌─── Languages ────────────────────────────────┐',
       '  │  JavaScript · TypeScript · Java · Python      │',
@@ -64,6 +67,7 @@ const COMMANDS = {
   },
   experience: {
     description: 'Professional experience timeline',
+    link: { href: '/professional', label: 'Read more → Professional' },
     run: () => [
       '  ── Timeline ──────────────────────────────────────',
       '',
@@ -93,6 +97,7 @@ const COMMANDS = {
   },
   projects: {
     description: 'Notable projects',
+    link: { href: '/projects', label: 'Read more → Projects' },
     run: () => [
       '  ▸ UTS HELPS Prototype',
       '    Student appointment booking system built with',
@@ -112,6 +117,7 @@ const COMMANDS = {
   },
   education: {
     description: 'Academic background',
+    link: { href: '/academia', label: 'Read more → Academia' },
     run: () => [
       '  ╭──────────────────────────────────────────────╮',
       '  │  University of Technology Sydney (UTS)        │',
@@ -203,6 +209,9 @@ export default function TerminalEmulator() {
       if (command) {
         const output = command.run();
         newEntries.push(...output.map((text) => ({ type: 'output', text })));
+        if (command.link) {
+          newEntries.push({ type: 'link', href: command.link.href, text: command.link.label });
+        }
         newEntries.push({ type: 'output', text: '' });
       } else {
         newEntries.push({
@@ -267,20 +276,31 @@ export default function TerminalEmulator() {
         ref={terminalRef}
         className="bg-gray-950 p-4 h-[500px] overflow-y-auto font-mono text-sm leading-relaxed"
       >
-        {history.map((entry, i) => (
-          <div
-            key={i}
-            className={`whitespace-pre-wrap break-words ${
-              entry.type === 'input'
-                ? 'text-blue-300'
-                : entry.type === 'error'
-                  ? 'text-red-400'
-                  : 'text-gray-300'
-            }`}
-          >
-            {entry.text}
-          </div>
-        ))}
+        {history.map((entry, i) =>
+          entry.type === 'link' ? (
+            <div key={i} className="my-2 ml-2">
+              <Link
+                href={entry.href}
+                className="inline-block px-3 py-1.5 text-xs font-mono rounded bg-blue-600 hover:bg-blue-500 text-white transition-colors"
+              >
+                {entry.text}
+              </Link>
+            </div>
+          ) : (
+            <div
+              key={i}
+              className={`whitespace-pre-wrap break-words ${
+                entry.type === 'input'
+                  ? 'text-blue-300'
+                  : entry.type === 'error'
+                    ? 'text-red-400'
+                    : 'text-gray-300'
+              }`}
+            >
+              {entry.text}
+            </div>
+          )
+        )}
 
         <div className="flex items-center">
           <span className="text-blue-300 whitespace-pre">
