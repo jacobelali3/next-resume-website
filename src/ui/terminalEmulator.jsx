@@ -42,7 +42,7 @@ const COMMANDS = {
   },
   skills: {
     description: 'Technical skills & languages',
-    link: { href: '/about', label: 'Read more → About Me' },
+    link: { href: '/professional', label: 'Read more → Professional' },
     run: () => [
       '  ┌─── Languages ────────────────────────────────┐',
       '  │  JavaScript · TypeScript · Java · Python      │',
