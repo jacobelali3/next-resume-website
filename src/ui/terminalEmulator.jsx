@@ -126,7 +126,7 @@ const COMMANDS = {
       '  │  Major: Software Engineering                  │',
       '  │  Sub-Major: Real-time Systems                 │',
       '  │  WAM: 77                                      │',
-      '  │  2017 – 2022                                  │',
+      '  │  2017 - 2022                                  │',
       '  ╰──────────────────────────────────────────────╯',
       '',
       '  Capstone: "Assisted Posting for Small Business',
@@ -166,6 +166,8 @@ const WELCOME_MESSAGE = [
 ];
 
 export default function TerminalEmulator() {
+  const [poweredOn, setPoweredOn] = useState(false);
+  const [animating, setAnimating] = useState(false);
   const [history, setHistory] = useState([
     ...WELCOME_MESSAGE.map((text) => ({ type: 'output', text })),
   ]);
@@ -186,8 +188,18 @@ export default function TerminalEmulator() {
   }, [history, scrollToBottom]);
 
   useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
+    if (poweredOn) {
+      inputRef.current?.focus();
+    }
+  }, [poweredOn]);
+
+  const powerOn = () => {
+    setAnimating(true);
+    setTimeout(() => {
+      setPoweredOn(true);
+      setAnimating(false);
+    }, 600);
+  };
 
   const handleCommand = useCallback(
     (cmd) => {
@@ -257,25 +269,43 @@ export default function TerminalEmulator() {
   };
 
   return (
-    <div
-      className="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-gray-700"
-      onClick={focusInput}
-    >
-      <div className="flex items-center px-4 py-3 bg-gray-900 border-b border-gray-700">
-        <div className="flex gap-2 mr-4">
-          <span className="w-3 h-3 rounded-full bg-red-500" />
-          <span className="w-3 h-3 rounded-full bg-yellow-500" />
-          <span className="w-3 h-3 rounded-full bg-green-500" />
-        </div>
-        <span className="text-sm text-gray-400 font-mono">
-          visitor@jacob-elali — bash
-        </span>
-      </div>
+    <div className="w-full max-w-4xl mx-auto">
+      <p className="text-sm text-slate-400 dark:text-slate-500 mb-2 text-center font-mono">
+        {poweredOn ? (
+          <>Type <code className="px-1 py-0.5 bg-gray-800 rounded text-blue-400 text-xs">help</code> to explore</>
+        ) : (
+          <span
+            className="cursor-pointer hover:text-slate-300 transition-colors animate-pulse"
+            onClick={powerOn}
+          >
+            ▶ Click to open terminal
+          </span>
+        )}
+      </p>
 
       <div
-        ref={terminalRef}
-        className="bg-gray-950 p-4 h-[500px] overflow-y-auto font-mono text-sm leading-relaxed"
+        className={`rounded-xl overflow-hidden shadow-2xl border border-gray-700 origin-top ${
+          !poweredOn && !animating ? 'crt-off cursor-pointer' : ''
+        }${
+          animating ? ' crt-animate' : ''
+        }`}
+        onClick={!poweredOn && !animating ? powerOn : focusInput}
       >
+        <div className="flex items-center px-4 py-3 bg-gray-900 border-b border-gray-700">
+          <div className="flex gap-2 mr-4">
+            <span className="w-3 h-3 rounded-full bg-red-500" />
+            <span className="w-3 h-3 rounded-full bg-yellow-500" />
+            <span className="w-3 h-3 rounded-full bg-green-500" />
+          </div>
+          <span className="text-sm text-gray-400 font-mono">
+            visitor@jacob-elali — bash
+          </span>
+        </div>
+
+        <div
+          ref={terminalRef}
+          className="bg-gray-950 p-4 h-[500px] overflow-y-auto font-mono text-sm leading-relaxed"
+        >
         {history.map((entry, i) =>
           entry.type === 'link' ? (
             <div key={i} className="my-2 ml-2">
@@ -318,7 +348,8 @@ export default function TerminalEmulator() {
             aria-label="Terminal input"
           />
         </div>
-      </div>
+          </div>
+        </div>
     </div>
   );
 }
