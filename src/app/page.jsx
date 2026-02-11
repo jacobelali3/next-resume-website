@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Video from '../ui/codevideo.jsx'
+import TerminalEmulator from '../ui/terminalEmulator.jsx'
 
 export default function Home() {
   return (
@@ -7,19 +8,31 @@ export default function Home() {
 
     <Video></Video>
 
-    <div  className="h-auto mt-48 flex justify-center mx-12">
-    <Link href="/about">
-      <button aria-label = "welcome button"
-      className="px-6 py-4 relative bg-slate-800 rounded-lg animate-beat ">
-        <h1 className="mb-4 text-2xl text-white text-center">Welcome,<br></br>I&apos;m a software engineer with a passion for technology!</h1>
-        <p className='text-white text-center no-underline hover:underline decoration-blue-400'>Check me out!</p>
-        </button>
-        </Link>
+    {/* Welcome banner */}
+    <div className="relative z-10 mt-32 mb-6 flex justify-center mx-4 animate-beat">
+      <Link href="/about" className="group">
+        <div className="px-5 py-3 bg-slate-800/80 backdrop-blur-sm rounded-lg border border-slate-700 hover:border-blue-400 transition-colors">
+          <h1 className="text-lg md:text-xl text-white text-center">
+            Welcome — I&apos;m a software engineer with a passion for technology
+          </h1>
+          <p className='text-sm text-slate-400 text-center group-hover:text-blue-300 transition-colors mt-1'>
+            Learn more about me &rarr;
+          </p>
+        </div>
+      </Link>
+    </div>
+
+    {/* Interactive terminal */}
+    <div className="relative z-10 flex justify-center mx-4 mb-16">
+      <div className="w-full max-w-3xl">
+        <p className="text-sm text-slate-400 dark:text-slate-500 mb-2 text-center font-mono">
+          Type <code className="px-1 py-0.5 bg-gray-800 rounded text-blue-400 text-xs">help</code> to explore
+        </p>
+        <TerminalEmulator />
+      </div>
     </div>
 
     </div>
-
-
   )
 }
 
