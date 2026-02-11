@@ -4,7 +4,7 @@ import TerminalEmulator from '../ui/terminalEmulator.jsx'
 
 export default function Home() {
   return (
-    <div className='overflow-hidden'>
+    <div className='relative overflow-hidden min-h-screen'>
 
     <Video></Video>
 
